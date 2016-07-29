@@ -68,7 +68,8 @@ var renderReviewForm = function(req, res, locDetail) {
         pageHeader: {
             title: 'Review ' + locDetail.name
         },
-        error: req.query.err
+        error: req.query.err,
+        url: req.originalUrl
     })
 }
 
